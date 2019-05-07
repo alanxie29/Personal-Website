@@ -1,3 +1,33 @@
-<app-navbar class="nav"></app-navbar>
 
-<div class="container"></div>
+<ng-sidebar-container class="navbar">
+ 
+    <!-- A sidebar -->
+    <ng-sidebar class="menu-slide" [(opened)]="_opened" position="end" closeOnClickOutside="true">
+      <mat-icon (click)="_toggleSidebar()">arrow_back</mat-icon>
+      <p>Sidebar contents</p>
+    </ng-sidebar>
+
+
+      
+    <!-- Page content -->
+    <div ng-sidebar-content class="nav-icon">
+      <mat-icon *ngIf="!_opened" class="menu-icon" (click)="_toggleSidebar()">menu</mat-icon>
+    <div class="container-fluid">
+      <div class="container" id="centerpiece">
+          <div class="row">
+            <h1>Hi, I'm Alan!</h1>
+          </div>
+          <div class="row">
+            <h2> I'm a student at the University of Waterloo </h2>
+          </div>
+          <div class="row" id="carousel">
+            <app-carousel></app-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ng-sidebar-container>
+
+  
+    

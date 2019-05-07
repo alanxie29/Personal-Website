@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  showFiller = false;
+  private _opened: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  private _toggleSidebar() {
+    this._opened = !this._opened;
+  } 
 
 }
