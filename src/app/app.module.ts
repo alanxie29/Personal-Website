@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SidebarModule } from 'ng-sidebar';
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { MatChipsModule } from '@angular/material/chips';
+
 
 
 
@@ -29,6 +31,7 @@ import { SlideshowModule } from 'ng-simple-slideshow';
     MatCardModule,
     SidebarModule.forRoot(),
     SlideshowModule,
+    MatChipsModule,
   ],
 
   providers: [],

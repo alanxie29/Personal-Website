@@ -8,6 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
 
   private _opened: boolean = false;
+  public projects: any[] = [
+    {
+      position: "Junior Developer",
+      name: "HelloGbye",
+      picture: "../assets/hellogbye.png",
+      chips: ["Front End", "Database Management (MongoDB)",]
+    }, 
+    {
+      name: "SubTracker"
+    },
+    {
+      name: "Personal Website"
+    }
+  ]
+
+  
 
   constructor() { }
 

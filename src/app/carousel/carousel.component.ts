@@ -13,9 +13,13 @@ export class CarouselComponent implements OnInit {
     "../assets/mongo.jpg",
     "../assets/ionic.png",
     "../assets/react.png",
-    "../assets/react-native.png" 
+    "../assets/react-native.png",
+    "../assets/node.png",
+    // "../assets/python.png", 
   ]
+
   ngOnInit() {
+
   }
 
 }

@@ -1,41 +1,53 @@
-<ng-sidebar-container class="navbar">
-
-  <!-- A sidebar -->
-  <ng-sidebar class="menu-slide" [(opened)]="_opened" position="end" closeOnClickOutside="true">
-    <mat-icon (click)="_toggleSidebar()">arrow_back</mat-icon>
-    <p>Sidebar contents</p>
-  </ng-sidebar>
-
-
-
-  <!-- Page content -->
-  <div ng-sidebar-content class="nav-icon">
-    <mat-icon *ngIf="!_opened" class="menu-icon" (click)="_toggleSidebar()">menu</mat-icon>
-    <div class="container-fluid">
-      <div class="container" id="centerpiece">
-        <div class="row" class="title">
-          <h1>Hi, I'm <span class="detail">Alan.
-            </span></h1>
-          
-        </div>
-        <div class="row">
-          <h2> I'm a <span class="detail"> Health Sciences</span> student and  <span class="detail">developer</span> in my second year at the University of Waterloo. 
-               I recently finished my internship as a Junior Developer at <span class="detail">Hellogbye</span>, a travel startup located in Toronto. 
-          </h2>
-        </div>
-        <!-- <div class="row" id="carousel">
+<div>
+  <div class="home-main">
+  <div id="centerpiece">
+    <div class="row" class="title">
+      <h1>Hi, I'm <span class="detail">Alan.
+        </span></h1>
+    </div>
+    <div class="row">
+      <h2> I'm a <span class="detail"> Health Sciences</span> student and <span class="detail">developer</span> in my
+        second year at the University of Waterloo.
+        I recently finished my internship as a Junior Developer at <span class="detail">HelloGbye</span>, a travel
+        startup located in Toronto.
+      </h2>
+    </div>
+    <!-- <div class="row" id="carousel">
             <h2>Ask me about</h2><app-carousel></app-carousel>
         </div> -->
+
+    <div class="row" id="arrow-style">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
+  </div>
+  </div>
+    <div id="experience-header">
+      <div class="experience-title">
+        <h3>Experience & Projects <span class="split"> &nbsp;&nbsp;|</span></h3>
+      </div>
+        <div id="carousel">
+          <app-carousel></app-carousel>
       </div>
     </div>
-    <div class="container" id="arrow-style">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
+
+    <div class="row">
+      <mat-card class="projects-card" *ngFor="let project of projects">
+        <div class="row" id="card-title">
+          <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
+            <span class="subtitle">{{project.position}}</span></mat-card-title>
+        </div>
+        <div>
+        <img class="project-pic" [src]="project.picture"/>
       </div>
+      <div class="chips">
+        <mat-chip-list>
+          <mat-chip *ngFor="let chip of project.chips">{{chip}}</mat-chip>
+        </mat-chip-list>
+      </div>
+      </mat-card>
+    </div>
+
   </div>
 
-
-
-
-</ng-sidebar-container>
