@@ -1,53 +1,80 @@
-<div>
+<div id="full-page">
   <div class="home-main">
-  <div id="centerpiece">
+  <div class="centerpiece">
     <div class="row" class="title">
       <h1>Hi, I'm <span class="detail">Alan.
         </span></h1>
     </div>
-    <div class="row">
+    <div class="row" id="title-desc">
       <h2> I'm a <span class="detail"> Health Sciences</span> student and <span class="detail">developer</span> in my
         second year at the University of Waterloo.
-        I recently finished my internship as a Junior Developer at <span class="detail">HelloGbye</span>, a travel
+        I recently finished my internship as a Junior Developer at <span class="detail">HelloGbye</span>, a travel tech
         startup located in Toronto.
       </h2>
+      <div class="row" id="icon-row-main  ">
+        <a><i class="fab fa-github page-icon"></i></a>
+        <a><i class="fab fa-linkedin-in page-icon"></i></a>
+        <a><i class="fas fa-envelope page-icon"></i></a>
+        <a><i class="fas fa-file page-icon"></i></a>
+      </div>
     </div>
     <!-- <div class="row" id="carousel">
             <h2>Ask me about</h2><app-carousel></app-carousel>
         </div> -->
 
-    <div class="row" id="arrow-style">
+    <div class="row" id="arrow-style" (click)="scroll(experience)">
       <div class="chevron"></div>
       <div class="chevron"></div>
       <div class="chevron"></div>
     </div>
   </div>
   </div>
-    <div id="experience-header">
+    <div #experience id="experience-header">
       <div class="experience-title">
-        <h3>Experience & Projects <span class="split"> &nbsp;&nbsp;|</span></h3>
+        <h3>Experience & Projects <span class="split" id="title-line"> &nbsp;&nbsp;|</span></h3>
       </div>
         <div id="carousel">
           <app-carousel></app-carousel>
       </div>
     </div>
 
-    <div class="row">
-      <mat-card class="projects-card" *ngFor="let project of projects">
+
+      <mat-card class="projects-card-desktop" *ngFor="let project of projects">
+            <div class="img-row">
+                <img class="project-pic" [src]="project.picture"/>
+              </div>
+          <div class="card-info">
         <div class="row" id="card-title">
           <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
             <span class="subtitle">{{project.position}}</span></mat-card-title>
         </div>
-        <div>
-        <img class="project-pic" [src]="project.picture"/>
+        <div class="description">
+          <h4 class="description-text">{{project.description}}</h4>
+        </div>
+        <div class="chips">
+          <mat-chip-list>
+            <mat-chip disableRipple="true" class="chip" *ngFor="let chip of project.chips">{{chip}}</mat-chip>
+          </mat-chip-list>
+        </div>
       </div>
-      <div class="chips">
-        <mat-chip-list>
-          <mat-chip *ngFor="let chip of project.chips">{{chip}}</mat-chip>
-        </mat-chip-list>
-      </div>
+      </mat-card>
+
+      <mat-card class="projects-card-mobile" *ngFor="let project of projects">
+        <div class="img-row-mobile">
+          <img class="project-pic-mobile" [src]="project.picture"/>
+        </div>
+        <div class="card-info">
+          <div class="row" id="card-title-mobile">
+            <mat-card-title class="card-title-text">{{project.name}}&nbsp;&nbsp;<span class="split-light">| &nbsp;</span>
+            <span class="subtitle">{{project.position}}</span></mat-card-title>
+          </div>
+          <div class="description">
+            <h4 class="description-text">{{project.description}}</h4>
+          </div>
+        </div>
       </mat-card>
     </div>
 
-  </div>
+    <app-footer></app-footer>
+
 

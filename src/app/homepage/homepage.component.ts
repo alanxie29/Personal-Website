@@ -13,13 +13,24 @@ export class HomepageComponent implements OnInit {
       position: "Junior Developer",
       name: "HelloGbye",
       picture: "../assets/hellogbye.png",
-      chips: ["Front End", "Database Management (MongoDB)",]
+      description: "AI driven travel planning & booking.",
+      chips: ["Front End Development", "Database Management (MongoDB)", "Data Visualization (d3.js)", "Angular 7", "Ionic 4", "Node.js", "Quality Assurance"],
     }, 
     {
-      name: "SubTracker"
+      position: "Personal Project",
+      name: "Huddle",
+      picture: "../assets/huddle.png",
+      description: "A new way to connect NFL Fans & local restaurants.",
+      chips: ["React Native", "Axios (Http)", "Java (Spring)", "Authentication Flow"],
     },
     {
-      name: "Personal Website"
+      name: "Personal Website",
+      picture: "../assets/hellogbye.png"
+    },
+    {
+      position: "Personal Project",
+      name: "SubTracker",
+      picture: "../assets/huddle.png"
     }
   ]
 
@@ -28,6 +39,11 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  scroll($element: HTMLElement): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   private _toggleSidebar() {
