@@ -46,7 +46,7 @@ export class HomepageComponent implements OnInit {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
-  private _toggleSidebar() {
+  private _toggleSidebar(): void {
     this._opened = !this._opened;
   } 
 
