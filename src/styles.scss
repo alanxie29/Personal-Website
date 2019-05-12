@@ -2,12 +2,43 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500|Roboto:300,400,500');
 
-@media (max-width: 575.98px) {
-  #full-page {
-    padding: 2rem;
-  }
+body {
+  max-width: 100%;
 }
 
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 500%;
+	letter-spacing: 2px;
+	color: #212529;
+	margin-bottom: 0px;
+}
+
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 150%;
+	letter-spacing: 2px;
+	display: block;
+	color: #212529;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 200%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #0080FF;
+}
+
+
+@media (max-width: 575.98px) {
+  #full-page {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {  }
@@ -16,11 +47,15 @@
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  #full-page {
+    padding: 10rem;
+  }
+ }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 	#full-page {
-		padding: 8rem;
+    padding: 8rem;
 	}
 } 

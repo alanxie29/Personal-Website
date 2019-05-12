@@ -8,9 +8,9 @@
 }
 
 .card-info {
-  margin-top: -25%;
-  padding-bottom: 7%;
-  margin-left: 1%;
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
 }
 
 .menu-icon {
@@ -36,7 +36,6 @@
   margin-left: 1px;
 }
 
-
 .home-main {
   height: 100%;
 }
@@ -51,33 +50,33 @@
   font-weight: 300;
 }
 
-h1 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 500%;
-	letter-spacing: 2px;
-	color: #212529;
-	margin-bottom: 0px;
-}
-
 .detail {
 	color: #0080FF;
+}
+
+.detail-link {
+  color: #0080FF;
+  cursor: pointer;
 }
 
 .projects-card-desktop {
   margin-bottom: 2%;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
-
 .project-pic {
-  width: 400px;
+  width: 350px;
   height: auto;
   border-radius: 15px;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px !important;
 }
 
 .description {
-  margin-left: 35%;
+  margin-left: 5%;
   margin-top: -3%;
 }
 
@@ -90,7 +89,7 @@ h1 {
 }
 
 .chips {
-  margin-left: 35%;
+  margin-left: 5%;
   margin-bottom: 0;
 }
 
@@ -111,7 +110,7 @@ mat-card:hover {
 }
 
 #card-title {
-  margin-left: 35%;
+  margin-left: 5%;
   display: inline-block;
   padding-top: 2%;
 }
@@ -137,15 +136,6 @@ mat-card:hover {
   display: inline-block;
 }
 
-h2 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 150%;
-	letter-spacing: 2px;
-	display: block;
-	color: #212529;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
 
 @keyframes fadeIn{
 	from {
@@ -161,10 +151,6 @@ h2 {
 .title {
 	white-space: nowrap;
 }
-
-// .detail {
-// 	color: #ef4056;
-// }
 
 .chevron {
   position: absolute;
@@ -251,12 +237,6 @@ h2 {
   cursor: pointer;
 }
 
-h3 {
-  font-size: 200%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #0080FF;
-}
 
 .projects-card-mobile {
   width: 100%;
@@ -374,6 +354,11 @@ app-footer {
     font-size: 20px;
   }
 
+  .card-info {
+    margin-top: 0px;
+    margin-left: -10px;
+  }
+
  }
 
 
@@ -384,7 +369,15 @@ app-footer {
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .projects-card-mobile {
+      display: none;
+    }
+
+    .card-info {
+      margin-left: 20px;
+    }
+  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
@@ -406,6 +399,7 @@ app-footer {
 
   .centerpiece {
     margin-top: 150px !important;
+    margin-bottom: auto;
   }
 
   #experience-header {
@@ -418,7 +412,9 @@ app-footer {
     margin-top: -100px;
   }
 
-
+  app-footer {
+    margin-top: 200px;
+  }
 
 
 } 

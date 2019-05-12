@@ -12,9 +12,8 @@ import { SidebarModule } from 'ng-sidebar';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { MatChipsModule } from '@angular/material/chips';
 import { FooterComponent } from  './footer/footer.component';
-
-
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -23,6 +22,7 @@ import { FooterComponent } from  './footer/footer.component';
     HomepageComponent,
     CarouselComponent,
     FooterComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +33,7 @@ import { FooterComponent } from  './footer/footer.component';
     SidebarModule.forRoot(),
     SlideshowModule,
     MatChipsModule,
+    MatSidenavModule
   ],
 
   providers: [],
