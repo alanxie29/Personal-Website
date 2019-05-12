@@ -1,57 +1,63 @@
-<div class="back-button">
-  <a (click)="backClick()" id="back-button"><i class="fas fa-long-arrow-alt-left"></i></a>
-</div>
-<div id="full-page">
-  <div class="story">
-  <div id="about-me-pic-div">
-    <img class="about-me-pic" src="../../assets/me2.png" />
-  </div>
 
-  <div id="about-me-div-info">
-    <div class="row" id="about-me-title">
-      <h1> My Story</h1>
+
+
+<div id="full-page">
+    <div class="back-button">
+      <h4 (click)="backClick()" id="back-button"><i class="fas fa-caret-left"></i>&nbsp;Home </h4>
+    </div>
+    <div class="fwd-button">
+      <h4 routerLink="/HelloGbye" id="back-button">Experience &nbsp;<i class="fas fa-caret-right"></i></h4>
+    </div>
+  <div class="about-me-pic-div">
+    <img class="about-me-pic" src="../../assets/me.jpg" />
+  </div>
+  <div class="about-me-div-info">
+    <div class="about-me-title">
+      <h3>Hey, I'm Alan!</h3>
     </div>
     <div class="row" id="about-me-desc">
-      <h2>Hey, I'm Alan! I'm a goal driven, team-oriented leader and developer with experience planning, developing, and deploying software
-          solutions through active collaboration, critical thinking, and best practice. I enjoy working on projects that have real-world
-          impacts in the industries of healthcare and AI. My main interests lie in data, healthcare, and artificial intelligence. 
-          In my free time, you can find me listening to my favourite music, working out, 
-          or playing video games and sports with my friends.  </h2>
+      <h2>I'm a goal driven, team-oriented leader and developer with experience planning, developing, and deploying
+        software
+        solutions through active collaboration, critical thinking, and best practice. I enjoy working on projects that
+        have real-world
+        impacts in the industries of healthcare and AI. My main interests lie in data, healthcare, and artificial
+        intelligence.
+        In my free time, you can find me listening to my favourite music, working out,
+        or playing video games and sports with my friends. </h2>
     </div>
-  </div>
-  </div>
-
-  <div id="education">
-    <div class="education-title">
-      <h3>Education</h3>
-    </div>
-    <div class="split-div">
-      <p class="split"> &nbsp; &nbsp; |</p>
-    </div>
-
-    <div class="education-div-pic">
-        <img src="../../assets/ahs.png" class="education-pic"/>
+    <div id="education">
+      <div class="education-title">
+        <h3>Education</h3>
       </div>
-    <div class="education-info">
-      <h2>
-        I'm currently in my second year in the Health Studies program at the University of Waterloo, hoping to specialize in Health Informatics.
-        Health informatics is an interdisciplinary field with a split focus in data science, information management, and data analysis to track and predict
-        information and trends in healthcare.
-      </h2>
-    </div>
-  </div>
+      <div class="split-div">
+        <p class="split"> &nbsp; |</p>
+      </div>
 
-  <div class="skills">
-    <div class="skills-title">
-      <h3>Skills & Experience</h3>
+      <div class="education-div-pic">
+        <img src="../../assets/ahs.png" class="education-pic" />
+      </div>
+      <div class="education-info">
+        <h2>
+          I'm currently in my second year in the Health Studies program at the University of Waterloo, hoping to
+          specialize in Health Informatics.
+          Health informatics is an interdisciplinary field with a split focus in data science, information management,
+          and data analysis to track
+          patient data and predict trends in healthcare.
+        </h2>
+      </div>
     </div>
-    <div class="skills-info">
-      <h2>Languages: JavaScript, TypeScript, Python, HTML/CSS</h2>
-      <h2>Frameworks and Libraries: Node.js, React.js, Angular 2+, React Native, Ionic 4, d3.js</h2>
-      <h2>Cloud and Tools: MongoDB, Postman, Heroku, Git</h2>
+      <div class="skills">
+          <div class="skills-title">
+            <h3>Skills & Experience</h3>
+          </div>
+          <div class="skills-info">
+            <h2>Languages: JavaScript, TypeScript, Python, HTML/CSS</h2>
+            <h2>Frameworks and Libraries: Node.js, React.js, Angular 2+, React Native, Ionic 4, d3.js</h2>
+            <h2>Cloud and Tools: MongoDB, Postman, Heroku, Git</h2>
+          </div>
+        </div> 
     </div>
-  </div>
 
-</div>
+  </div>
 
 <app-footer></app-footer>

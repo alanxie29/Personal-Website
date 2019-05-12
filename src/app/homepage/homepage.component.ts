@@ -22,11 +22,7 @@ export class HomepageComponent implements OnInit {
       picture: "../assets/huddle.png",
       description: "A new way to connect NFL Fans & local restaurants.",
       chips: ["React Native", "Axios (Http)", "Java (Spring)", "Authentication Flow"],
-    },
-    {
-      name: "Personal Website",
-      picture: "../assets/hellogbye.png"
-    },
+    },  
     {
       position: "Personal Project",
       name: "SubTracker",

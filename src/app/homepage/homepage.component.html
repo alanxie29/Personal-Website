@@ -36,8 +36,8 @@
     </div>
 
 
-      <mat-card class="projects-card-desktop" *ngFor="let project of projects">
-                <img class="project-pic" [src]="project.picture"/>
+      <mat-card class="projects-card-desktop" *ngFor="let project of projects" routerLink="/{{project.name}}">
+            <img class="project-pic" [src]="project.picture"/>
           <div class="card-info">
         <div class="row" id="card-title">
           <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
@@ -54,7 +54,7 @@
       </div>
       </mat-card>
 
-      <mat-card class="projects-card-mobile" *ngFor="let project of projects">
+      <mat-card class="projects-card-mobile" *ngFor="let project of projects" routerLink="/{{project.name}}">
         <div class="img-row-mobile">
           <img class="project-pic-mobile" [src]="project.picture"/>
         </div>

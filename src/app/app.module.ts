@@ -14,6 +14,8 @@ import { MatChipsModule } from '@angular/material/chips';
 import { FooterComponent } from  './footer/footer.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AboutComponent } from './about/about.component';
+import { HellogbyeComponent } from './hellogbye/hellogbye.component';
+import { HuddleComponent } from './huddle/huddle.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { AboutComponent } from './about/about.component';
     CarouselComponent,
     FooterComponent,
     AboutComponent,
+    HellogbyeComponent,
+    HuddleComponent,
   ],
   imports: [
     BrowserModule,
