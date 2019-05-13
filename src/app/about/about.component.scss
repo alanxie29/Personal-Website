@@ -56,7 +56,6 @@ h1 {
 .education-div-pic {
   display: inline-block;
   position: absolute;
-  margin-top: 40px;
 }
 
 .education-pic {
@@ -94,6 +93,7 @@ h4 {
 
   h2 {
     font-size: 14px;
+    font-weight: 500;
   }
   
   h3 {
@@ -138,7 +138,12 @@ h4 {
     line-height: 2rem;
   }
 
-  .about-me-pic-mobile {
-    display: none;
+
+  .about-me-pic {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 18%;
   }
 } 

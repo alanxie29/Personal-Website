@@ -1,43 +1,64 @@
 <div id="full-page">
-    <div class="title">
-      <div class="arrow-div-left">
-        <h1 routerLink="/"> <span class="nav-buttons"><i class="fas fa-long-arrow-alt-left desktop-arrow-left"></i> Home</span></h1>
-      </div>
-      <h1>
-        <i routerLink="/HelloGbye" class="fas fa-chevron-left arrow-left"></i>
-        Huddle 
-        <i routerLink="/" class="fas fa-chevron-right arrow-right"></i></h1>
-        <div class="arrow-div-right">
-            <h1 routerLink="/"><span class="nav-buttons"> Huddle <i class="fas fa-long-arrow-alt-right desktop-arrow-right"></i></span></h1>
-        </div>
+  <div class="title">
+    <div class="arrow-div-left">
+      <h1 routerLink="/HelloGbye"> <span class="nav-buttons"><i
+            class="fas fa-long-arrow-alt-left desktop-arrow-left"></i> HelloGbye</span></h1>
     </div>
-    <img class="hellogbye-img" src="../../assets/huddle-project.png" />
-    <div class="hellogbye-info">
-      <h2><span class="info-title">Summary: </span> Huddle is a modern social media application that connects NFL fans while supporting local venues.</h2>
-      <h2><span class="info-title">Technologies: </span> React Native, Java (Spring), Google Maps API</h2>
-      <div class="hellogbye-list">
-        <h2><span class="info-title">My Tasks: </span></h2>
-        <h2 class="list">
-          <li class="info-list">
-            Called HTTP Requests using React Axios Library to display data from Spring backend.
-          </li>
-        </h2>
-        <h2 class="list">
-            <li class="info-list">
-                Configured login/signup form logic using data binding, lifecycle hooks, and component states.
-            </li>
-          </h2>
-          <h2 class="list">
-              <li class="info-list">
-                Used Google Maps and React Native API to track and record user location.
-              </li>
-            </h2>
-      </div>
+    <div class="arrow-div-right">
+      <h1 routerLink="/"><span class="nav-buttons"> Huddle <i
+            class="fas fa-long-arrow-alt-right desktop-arrow-right"></i></span></h1>
     </div>
-    <div class="chip-div">
-        <mat-chip-list class="chips">
-          <mat-chip class="chip"> View on Github </mat-chip>
-        </mat-chip-list>
-      </div>
+    <h1>
+      <i routerLink="/HelloGbye" class="fas fa-chevron-left arrow-left"></i>
+      Huddle
+      <i routerLink="/" class="fas fa-chevron-right arrow-right"></i>
+    </h1>
+
   </div>
-  <app-footer></app-footer>
+
+  <img class="huddle-img" src="../../assets/huddle-project.png" />
+  <div class="huddle-info">
+    <h2><span class="info-title">Summary: </span> Huddle is a modern social media application that connects NFL fans
+      while supporting local venues.</h2>
+    <h2><span class="info-title">Technologies: </span> React Native, Java (Spring), Google Maps API</h2>
+    <div class="huddle-list">
+      <h2><span class="info-title">My Tasks: </span></h2>
+      <h2 class="list">
+        <li class="info-list">
+          Called HTTP Requests using React Axios Library to display data from Spring backend.
+        </li>
+      </h2>
+      <h2 class="list">
+        <li class="info-list">
+          Configured login/signup form logic using data binding, lifecycle hooks, and component states.
+        </li>
+      </h2>
+      <h2 class="list">
+        <li class="info-list">
+          Used Google Maps and React Native API to track and record user location.
+        </li>
+      </h2>
+    </div>
+  </div>
+  <div class="problem">
+    <h2><span class="info-title">The Problem </span></h2>
+    <h2 class="list">Professional sports is a product that connects people regardless of age, gender, or race. This can
+      occur in
+      any setting, whether it's the office or the classroom. It is a concept that is very undermined, yet so powerful.
+      We wanted to utilize the product of sports by coming up with a way to quantify its fan-fueled competitive aspect
+      while selling it for what it really is, a social event. </h2>
+  </div>
+  <div class="problem">
+    <h2><span class="info-title">The Solution </span></h2>
+    <h2 class="list">Our brainstorming initially began with the concept of bringing people together. We realized that
+      fans don’t prioritize where they watch games, only who they are watching with and whether or not the game is on.
+      This led us to the idea of promoting local venues. Through Huddle, local venues could advertise the games they
+      were streaming to increase business while connecting fans at the same time. A win-win situation. For the
+      motivational aspect of Huddle, we decided to use a system that would associate a “rating” with each user. The
+      rating would be based on the accuracy of the user’s picks. It inclines users to continue to use Huddle in order to
+      broadcast their ability to make picks correctly. This can be compared to Stack Overflow, where users ask/answer
+      questions to increase their Stack Overflow “reputation”. </h2>
+    <div class="chip-div">
+      <button mat-raised-button class="github-btn">View on Github</button>
+    </div>
+  </div>

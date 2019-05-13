@@ -6,6 +6,10 @@ body {
   max-width: 100%;
 }
 
+app-footer {
+  width: 100%;
+}
+
 h1 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 500%;
@@ -55,7 +59,9 @@ h3 {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+
 	#full-page {
     padding: 8rem;
-	}
+  }
+  
 } 

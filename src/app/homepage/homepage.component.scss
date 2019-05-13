@@ -230,6 +230,7 @@ mat-card:hover {
 }
 
 #arrow-style {
+  padding-top: 12%;
 	padding-left: 45%;
 	margin-right: auto;
 }
@@ -257,12 +258,19 @@ mat-card:hover {
   margin-left: 15px;
 }
 
-app-footer {
-  margin-left: -10px;
+.detail-link {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 .page-icon {
   color: #0080FF;
+  cursor: pointer;
+}
+
+.page-icon:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
 }
 
  #icon-row-main {
