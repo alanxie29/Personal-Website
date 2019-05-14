@@ -14,14 +14,14 @@ export class HomepageComponent implements OnInit {
       name: "HelloGbye",
       picture: "../assets/hellogbye.png",
       description: "AI driven travel planning & booking.",
-      chips: ["Frontend Development", "Backend Development", "Database Management (MongoDB)", "Data Visualization (d3.js)", "Angular 7", "Ionic 4", "Node.js", "Postman", "Quality Assurance"],
+      chips: ["Frontend Development", "Backend Development", "Database Management (MongoDB)", "Data Visualization (d3.js)", "Angular 7", "Ionic 4", "Node.js", "Postman", "Quality Assurance", "Git"],
     }, 
     {
       position: "Personal Project",
       name: "Huddle",
       picture: "../assets/huddle.png",
       description: "A new way to connect NFL Fans & local restaurants.",
-      chips: ["React Native", "JavaScript", "Axios (HTTP)", "Frontend Development","Java (Spring)", "Session-based Authentication", "MVC Design Patterns", "RESTful API"],
+      chips: ["React Native", "JavaScript", "Axios (HTTP)", "Frontend Development", "Java (Spring)", "Session-based Authentication", "Git", "MVC Design Patterns", "RESTful API"],
     },  
     {
       position: "Personal Project",

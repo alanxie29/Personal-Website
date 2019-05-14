@@ -6,7 +6,7 @@
         </span></h1>
     </div>
     <div class="row" id="title-desc">
-      <h2> I'm a <span class="detail"> Health Sciences</span> student and <span class="detail">developer</span> in my
+      <h2> I'm a <span class="detail"> Health Studies</span> student and <span class="detail">developer</span> in my
         second year at the University of Waterloo.
         I recently finished my internship as a Junior Developer at <span class="detail">HelloGbye</span>, a travel tech
         startup located in Toronto. Read more about me <span class="detail-link" routerLink="/about">here</span>.
@@ -68,6 +68,21 @@
           </div>
         </div>
       </mat-card>
+
+      <mat-card class="projects-card-tablet" *ngFor="let project of projects" routerLink="/{{project.name}}">
+
+        <div class="card-info">
+      <div class="row" id="card-title">
+        <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
+          <span class="subtitle">{{project.position}}</span></mat-card-title>
+      </div>
+      <div class="description">
+        <h4 class="description-text">{{project.description}}</h4>
+      </div>
+    
+    </div>
+    <img class="project-pic" [src]="project.picture"/>
+    </mat-card>
     </div>
 
 

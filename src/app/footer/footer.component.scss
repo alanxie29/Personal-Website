@@ -66,7 +66,23 @@ h2 {
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+  #icon-row {
+    padding-top: 30px;
+    margin-left: 30%;
+  }
+
+  #icon-row a {
+    margin-left: 70px;
+    margin-right: auto;
+  }
+
+  h2 {
+    margin-left: 27%;
+  }
+
+ }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
