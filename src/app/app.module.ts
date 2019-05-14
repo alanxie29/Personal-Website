@@ -16,7 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { AboutComponent } from './about/about.component';
 import { HellogbyeComponent } from './hellogbye/hellogbye.component';
 import { HuddleComponent } from './huddle/huddle.component';
-
+import { SubtrackerComponent } from './subtracker/subtracker.component';
 
 
 
@@ -29,6 +29,7 @@ import { HuddleComponent } from './huddle/huddle.component';
     AboutComponent,
     HellogbyeComponent,
     HuddleComponent,
+    SubtrackerComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ import { HuddleComponent } from './huddle/huddle.component';
     SidebarModule.forRoot(),
     SlideshowModule,
     MatChipsModule,
-    MatSidenavModule
+    MatSidenavModule,
   ],
 
   providers: [],

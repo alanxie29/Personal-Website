@@ -14,19 +14,21 @@ export class HomepageComponent implements OnInit {
       name: "HelloGbye",
       picture: "../assets/hellogbye.png",
       description: "AI driven travel planning & booking.",
-      chips: ["Front End Development", "Database Management (MongoDB)", "Data Visualization (d3.js)", "Angular 7", "Ionic 4", "Node.js", "Quality Assurance"],
+      chips: ["Frontend Development", "Backend Development", "Database Management (MongoDB)", "Data Visualization (d3.js)", "Angular 7", "Ionic 4", "Node.js", "Postman", "Quality Assurance"],
     }, 
     {
       position: "Personal Project",
       name: "Huddle",
       picture: "../assets/huddle.png",
       description: "A new way to connect NFL Fans & local restaurants.",
-      chips: ["React Native", "Axios (Http)", "Java (Spring)", "Authentication Flow"],
+      chips: ["React Native", "JavaScript", "Axios (HTTP)", "Frontend Development","Java (Spring)", "Session-based Authentication", "MVC Design Patterns", "RESTful API"],
     },  
     {
       position: "Personal Project",
       name: "SubTracker",
-      picture: "../assets/huddle.png"
+      description: "Keep track of all your commitments.", 
+      picture: "../assets/huddle.png",
+      chips: ["Ionic 4", "Angular 7", "MongoDB", "Frontend Development", "Backend Development", "Token-Based Authentication", "TypeScript", "Node.js", "RESTful API", "Postman",]
     }
   ]
 
@@ -41,9 +43,5 @@ export class HomepageComponent implements OnInit {
   scroll($element: HTMLElement): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
-  private _toggleSidebar(): void {
-    this._opened = !this._opened;
-  } 
 
 }

@@ -11,6 +11,7 @@
   margin-top: 0px;
   display: inline-block;
   position: absolute;
+  width: 70%;
 }
 
 .menu-icon {
@@ -60,7 +61,7 @@
 }
 
 .projects-card-desktop {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   width: 100%;
   height: 300px;
 }
@@ -231,7 +232,7 @@ mat-card:hover {
 
 #arrow-style {
   padding-top: 12%;
-	padding-left: 45%;
+	padding-left: 47%;
 	margin-right: auto;
 }
 
@@ -241,10 +242,9 @@ mat-card:hover {
 
 
 .projects-card-mobile {
-  width: 100%;
   height: 340px !important;
-  margin-left: -20px;
   margin-bottom: 20px;
+  padding-right: auto;
 }
 
 .project-pic-mobile {
@@ -302,7 +302,7 @@ mat-card:hover {
   }
 
   #arrow-style {
-    margin-top: 50%;
+    margin-top: 40%;
   }
 
   h3 {
@@ -366,6 +366,7 @@ mat-card:hover {
   .card-info {
     margin-top: 0px;
     margin-left: -10px;
+    width: 95%;
   }
 
  }
@@ -401,9 +402,9 @@ mat-card:hover {
   }
 
   #arrow-style {
-    padding-left: 45%;
+    text-align: center;
     margin-right: auto;
-    margin-top: 12%;
+
   }
 
   .centerpiece {
@@ -420,10 +421,8 @@ mat-card:hover {
     margin-left: 10%;
     margin-top: -100px;
   }
-
-  app-footer {
-    margin-top: 200px;
+  
+  .card-info {
+    margin-top: 20px;
   }
-
-
 } 

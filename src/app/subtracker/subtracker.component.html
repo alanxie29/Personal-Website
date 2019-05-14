@@ -1,0 +1,81 @@
+<div id="full-page">
+  <div class="title">
+    <div class="arrow-div-left">
+      <h1 routerLink="/Huddle"> <span class="nav-buttons"><i class="fas fa-long-arrow-alt-left desktop-arrow-left"></i>
+          Huddle</span></h1>
+    </div>
+    <div class="arrow-div-right">
+      <h1 routerLink="/"><span class="nav-buttons"> Home <i
+            class="fas fa-long-arrow-alt-right desktop-arrow-right"></i></span></h1>
+    </div>
+    <h1>
+      <i routerLink="/Huddle" class="fas fa-chevron-left arrow-left"></i>
+      SubTracker
+      <i routerLink="/" class="fas fa-chevron-right arrow-right"></i>
+    </h1>
+  </div>
+
+  <img class="huddle-img" src="../../assets/huddle-project.png" />
+  <div class="huddle-info">
+    <h2><span class="info-title">Summary: </span> SubTracker is an application that allows you to keep
+      track of all your subscriptions. Using a mobile application, users can authenticate, add, and edit
+      their subscriptions and record their cost and renewal period. </h2>
+    <h2><span class="info-title">Technology: </span> Ionic 4, Angular 7, MongoDB,
+      Node.js (Express.js, Passport.js), Mongoose, HTML/CSS, TypeScript, Postman</h2>
+    <div class="huddle-list">
+      <h2><span class="info-title">My Tasks: </span></h2>
+      <h2 class="list">
+        <li class="info-list">
+          Created User entities and nested Subscriptions entities to be saved in MongoDB database.
+        </li>
+      </h2>
+
+      <h2 class="list">
+        <li class="info-list">
+          Utilized Passport.js and Ionic local storage to implement authentication using JSON Web Tokens.
+        </li>
+      </h2>
+      <h2 class="list">
+        <li class="info-list">
+          Configured Mongoose to simplify interactions with MongoDB database.
+        </li>
+      </h2>
+      <h2 class="list">
+        <li class="info-list">
+          Wrote a RESTful API using Node.js and Mongoose to handle authentication and CRUD operations within application
+          endpoints.
+        </li>
+      </h2>
+      <h2 class="list">
+          <li class="info-list">
+            Used Angular form logic and HTTP Module to call REST API endpoints
+          </li>
+        </h2>
+      <h2 class="list">
+        <li class="info-list">
+          Developed an Ionic 4 client in TypeScript to send HTTP requests and receive data from Node.js backend.
+        </li>
+      </h2>
+
+    </div>
+  </div>
+  <div class="problem">
+    <h2><span class="info-title">Purpose </span></h2>
+    <h2 class="list">
+      SubTracker served as a way for me to learn about HTTP requests and backend operations, specifically with Node.js and Angular 7.
+      The application also documents my learning experience with saving documents and nested documents within MongoDB using Node.js and Mongoose.
+      Using these tools, I created a fully functioning Ionic 4 client end and a Node.js server to handle all processes and requests.
+    </h2>
+  </div>
+  <div class="problem">
+    <h2><span class="info-title">Next Steps </span></h2>
+    <h2 class="list">
+      A major improvement to the app could be made with SMS or push notification features using the Twilio API or the Ionic API to remind users 
+      of their upcoming subscription renewal date. Another improvement could feature links to each subscription's account to provide the user 
+      a direct link to cancel or renew their subscription.
+
+      </h2>
+    <div class="chip-div">
+      <button onclick="location.href='https://github.com/alanxie29/SubTracker'" mat-raised-button class="github-btn">View on Github</button>
+    </div>
+  </div>
