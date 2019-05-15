@@ -18,7 +18,7 @@ h1 {
   height: auto;
   margin-top: 20px;
   border-radius: 20px;
-  animation: fadeIn 0.7s ease-in both;
+  cursor: pointer;
 }
 
 .hellogbye-img:hover {
@@ -148,6 +148,10 @@ h2 {
     margin-right: 0px;
   }
 
+  h2 {
+    font-size: 85%;
+  }
+
  }
 
 // Medium devices (tablets, 768px and up)
@@ -187,7 +191,7 @@ h2 {
   }
 
   .nav-buttons {
-    margin-top: 3%;
+    margin-top: 2.5%;
   }
 
   .arrow-div-right {

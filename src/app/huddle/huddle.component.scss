@@ -31,7 +31,7 @@ h1 {
   height: auto;
   margin-top: 20px;
   border-radius: 20px;
-  animation: fadeIn 0.7s ease-in both;
+  cursor: pointer;
 }
 
 .huddle-img:hover {
@@ -213,7 +213,7 @@ h2 {
   }
 
   .nav-buttons {
-    margin-top: 3%;
+    margin-top: 2.5%;
   }
 
   .arrow-div-right {
@@ -225,6 +225,7 @@ h2 {
   }
 
  }
+ 
 
  @media (min-width: 1200px) and (max-width: 1475px) {
   .arrow-div-right {

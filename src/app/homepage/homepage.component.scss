@@ -290,7 +290,7 @@ mat-card:hover {
 
 @media (max-width: 575.98px) { 
   h1 {
-    font-size: 40px;
+    font-size: 200%;
   }
 
   h2 {
@@ -488,7 +488,7 @@ mat-card:hover {
     font-size: 90%;
   }
 
- }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -553,6 +553,14 @@ mat-card:hover {
     max-width: 70%;
   }
 
+  h1 {
+    font-size: 350%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
 
 }
 
@@ -579,12 +587,12 @@ mat-card:hover {
   }
 
   .centerpiece {
-    margin-top: 75px !important;
+    margin-top: 100px !important;
     margin-bottom: auto;
   }
 
   #experience-header {
-    margin-top: 20%;
+    margin-top: 45%;
   }
 
   .experience-title {
