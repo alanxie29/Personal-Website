@@ -27,7 +27,7 @@ export class HomepageComponent implements OnInit {
       position: "Personal Project",
       name: "SubTracker",
       description: "Keep track of all your commitments.", 
-      picture: "../assets/huddle.png",
+      picture: "../assets/subtrackersplash.png",
       chips: ["Ionic 4", "Angular 7", "MongoDB", "Frontend Development", "Backend Development", "Token-Based Authentication", "TypeScript", "Node.js", "RESTful API", "Postman",]
     }
   ]

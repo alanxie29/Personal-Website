@@ -1,6 +1,6 @@
 .centerpiece {
   animation: fadeIn 0.7s ease-in both;
-  margin-top: 200px;
+
 }
 
 .card-grid {
@@ -245,15 +245,16 @@ mat-card:hover {
 
 
 .projects-card-mobile {
-  height: 340px !important;
+  height: 340px;
   margin-bottom: 20px;
   padding-right: auto;
 }
 
 .project-pic-mobile {
-  width: 100%;
+  width: 90%;
   height: 225px;
   border-radius: 15px;
+  margin-left: 5%;
 }
 
 #card-title-mobile {
@@ -261,10 +262,6 @@ mat-card:hover {
   margin-left: 15px;
 }
 
-.detail-link {
-  transform: scale(1.1);
-  transition: 0.2s ease-in-out;
-}
 
 .page-icon {
   color: #0080FF;
@@ -300,12 +297,16 @@ mat-card:hover {
     font-size: 15px;
   }
 
-  #centerpiece {
-    margin-top: 50%;
+  .centerpiece {
+    margin-top: 50% !important;
   }
 
   #arrow-style {
-    margin-top: 40%;
+    margin-top: 20% !important;
+  }
+
+  #experience-header {
+    margin-top: 68%;
   }
 
   h3 {
@@ -328,7 +329,7 @@ mat-card:hover {
     display: none;
   }
 
-  .project-cards-tablet {
+  .projects-card-tablet {
     display: none;
   }
 
@@ -340,7 +341,6 @@ mat-card:hover {
   .subtitle {
     font-size: 14px;
   }
-
 
   .description-text {
     font-size: 16px;
@@ -380,10 +380,115 @@ mat-card:hover {
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  h1 {
+    font-size: 350%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  #arrow-style {
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  #carousel {
+    display: none;
+  }
+
+  #title-line {
+    display: none;
+  }
+
+  .projects-card-tablet {
+    display: none;
+  }
+
+  .projects-card-desktop {
+    display: none;
+  }
+
+  .project-pic-mobile {
+    width: 70%;
+    height: 225px;
+    margin-left: 16%;
+  }
+
+  .projects-card-mobile {
+    height: 350px;
+  }
+
+  .card-title-text {
+    font-size: 130%;
+  }
+
+  #card-title-mobile {
+    width: 150%;
+  }
+
+  .description-text {
+    font-size: 120%;
+    width: 120% !important
+  }
+
+
+ }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .projects-card-tablet {
+    display: none;
+  }
+
+  .projects-card-desktop {
+    display: none;
+  }
+
+  .centerpiece {
+    margin-top: 20%;
+  }
+
+  #arrow-style {
+    margin-top: 7%;
+  }
+
+  #carousel {
+    display: none;
+  }
+
+  #title-line {
+    display: none;
+  }
+
+  .project-pic-mobile {
+    width: 70%;
+    height: 300px;
+    margin-left: 16%;
+  }
+
+  .projects-card-mobile {
+    height: 460px;
+  }
+
+  .card-title-text {
+    font-size: 180%;
+  }
+
+  #card-title-mobile {
+    width: 150%;
+  }
+
+  .card-info {
+    margin-left: 13%;
+  }
+
+  .description {
+    font-size: 90%;
+  }
+
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -392,12 +497,12 @@ mat-card:hover {
     }
 
     .card-info {
-      width: 50%;
+      width: 45%;
       margin-top: 35px !important;
     }
 
     #arrow-style {
-      margin-top: 13%;
+      margin-top: 5%;
     }
 
     .projects-card-desktop {
@@ -430,6 +535,11 @@ mat-card:hover {
 
     .project-pic {
       width: 45%;
+      height: 212.88px;
+    }
+
+    #experience-header {
+      margin-top: 40%;
     }
 
   }
@@ -442,7 +552,10 @@ mat-card:hover {
   .description-text {
     max-width: 70%;
   }
+
+
 }
+
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
@@ -462,11 +575,11 @@ mat-card:hover {
   #arrow-style {
     text-align: center;
     margin-right: auto;
-
+    
   }
 
   .centerpiece {
-    margin-top: 150px !important;
+    margin-top: 75px !important;
     margin-bottom: auto;
   }
 

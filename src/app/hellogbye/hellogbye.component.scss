@@ -1,15 +1,16 @@
 #full-page {
   padding-top: 0px !important;
-
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 200%;
   text-align: center;
   color: #0080FF;
   letter-spacing: 1px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  margin-top: 0px !important;
+  padding-bottom: 15px;
 }
 
 .hellogbye-img {
@@ -17,6 +18,7 @@ h1 {
   height: auto;
   margin-top: 20px;
   border-radius: 20px;
+  animation: fadeIn 0.7s ease-in both;
 }
 
 .hellogbye-img:hover {
@@ -28,10 +30,22 @@ h1 {
   background-color: #cbdaef;
   border-radius: 20px;
   padding-bottom: 5px;
+  margin-top: 3%;
 }
 
 .subtitle {
   text-align: center;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 h2 {
@@ -49,6 +63,7 @@ h2 {
 
 .hellogbye-info {
   margin-top: 50px;
+  animation: fadeIn 0.7s ease-in both;
 }
 
 .hellogbye-list {
@@ -73,7 +88,7 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   position: absolute;
-  margin-top: 5px;
+  margin-top: 1.5%;
   cursor: pointer;
 }
 
@@ -110,10 +125,55 @@ h2 {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+  .arrow-left {
+    display: none;
+  }
+
+  .arrow-right {
+    display: none;
+  }
+
+  .nav-buttons {
+    margin-top: 5%;
+    font-size: 50%;
+  }
+
+  .arrow-div-right {
+    margin-left: 73%;
+  }
+
+  .arrow-div-left {
+    margin-right: 0px;
+  }
+
+ }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+  .arrow-left {
+    display: none;
+  }
+
+  .arrow-right {
+    display: none;
+  }
+
+  .nav-buttons {
+    margin-top: 4%;
+  }
+
+  .arrow-div-right {
+    margin-left: 73%;
+  }
+
+  .arrow-div-left {
+    margin-right: 0px;
+  }
+
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -126,12 +186,34 @@ h2 {
     display: none;
   }
 
-  h1 {
-    padding-top: 0px;
-    margin-top: 0px;
+  .nav-buttons {
+    margin-top: 3%;
+  }
+
+  .arrow-div-right {
+    margin-left: 77%;
+  }
+
+  .arrow-div-left {
+    margin-right: 0px;
   }
 
  }
+
+
+ @media (min-width: 1200px) and (max-width: 1475px) {
+  .arrow-div-right {
+    margin-left: 80%;
+  }
+  
+  .arrow-div-left {
+    margin-right: 0px;
+  }
+
+  .nav-buttons {
+    margin-top: 2%;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
@@ -145,9 +227,9 @@ h2 {
   }
 
   .hellogbye-img {
-    width: 65%;
+    width: 55%;
     height: auto;
-    margin-left: 17%;
+    margin-left: 23%;
   }
 
   h1 {

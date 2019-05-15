@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "alan-xie",
+    "public": "dist/PersonalWebsite",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

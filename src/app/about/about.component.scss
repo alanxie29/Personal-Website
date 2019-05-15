@@ -12,16 +12,25 @@
   width: auto;
 }
 
+.about-me-div-info {
+  animation: fadeIn 0.7s ease-in both;
+}
+
 .about-me-pic {
   width: 100%;
   height: auto;
   border-radius: 25px;
   text-align: center;
+  animation: fadeIn 0.7s ease-in both;
 }
 
 .about-me-pic:hover {
   transform: scale(1.05);
-  transition: 0.2s ease-in-out; 
+  transition: 0.2s ease-in-out;
+}
+
+#full-page {
+  padding-top: 50px;
 }
 
 
@@ -41,6 +50,17 @@ h1 {
 .fwd-button {
   display: inline-block;
   float: right;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .split {
@@ -93,8 +113,6 @@ h2 {
   font-weight: 600 !important;
 }
 
-
-
 @media (max-width: 575.98px) {
 
   h1 {
@@ -106,7 +124,7 @@ h2 {
     font-size: 14px;
     font-weight: 500;
   }
-  
+
   h3 {
     font-weight: 600;
     font-size: 30px;
@@ -125,15 +143,46 @@ h2 {
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .education-div-pic {
+    display: none;
+  }
+
+  .split-div {
+    display: none;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h2 {
+    font-size: 100%;
+  }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-me-pic {
+    width: 70%;
+    height: auto;
+    margin-left: 18%;
+  }
 
- }
+  h2 {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1475px) {
+  .about-me-pic {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
@@ -144,7 +193,7 @@ h2 {
   }
 
   h2 {
-    font-size: 90%;
+    font-size: 110%;
     line-height: 2rem;
   }
 
@@ -152,8 +201,7 @@ h2 {
     width: 40%;
     height: auto;
     border-radius: 25px;
-    text-align: center;
     margin-left: 32%;
   }
-  
-} 
+
+}

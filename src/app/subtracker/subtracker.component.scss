@@ -17,6 +17,8 @@
     color: #0080FF;
     letter-spacing: 1px;
     font-weight: 600;
+    margin-top: 0px !important;
+    padding-bottom: 15px;
   }
   
   .chip-div {
@@ -26,19 +28,33 @@
   
   .huddle-img {
     width: 100%;
-    height: auto;
+    height: 90%;
     margin-top: 20px;
-		border-radius: 20px;
+    border-radius: 20px;
+    animation: fadeIn 0.7s ease-in both;
 	}
 	
 	.huddle-img:hover {
 		transform: scale(1.05);
-		transition: 0.2s ease-in-out;
-	}
+    transition: 0.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn{
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
   
   .title {
     background-color: #cbdaef;
-    border-radius: 20px;  
+    border-radius: 20px; 
+    margin-top: 3%; 
   }
   
   .subtitle {
@@ -59,6 +75,7 @@
   
   .huddle-info {
     margin-top: 50px;
+    animation: fadeIn 0.7s ease-in both;
   }
   
   .huddle-list {
@@ -79,8 +96,7 @@
     font-weight: 400;
     font-size: 20px;
     position: absolute;
-    margin-top: 10px;
-    cursor: pointer;
+    margin-top: 1.5%;
   }
   
   .arrow-div-left {
@@ -125,10 +141,51 @@
   }
   
   // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) and (max-width: 767.98px) {  }
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .arrow-left {
+      display: none;
+    }
+  
+    .arrow-right {
+      display: none;
+    }
+  
+    .nav-buttons {
+      margin-top: 5%;
+      font-size: 50%;
+    }
+  
+    .arrow-div-right {
+      margin-left: 75%;
+    }
+  
+    .arrow-div-left {
+      margin-right: 0px;
+    }
+   }
   
   // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) and (max-width: 991.98px) {  }
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    .arrow-left {
+      display: none;
+    }
+  
+    .arrow-right {
+      display: none;
+    }
+  
+    .nav-buttons {
+      margin-top: 3.5%;
+    }
+  
+    .arrow-div-right {
+      margin-left: 75%;
+    }
+  
+    .arrow-div-left {
+      margin-right: 0px;
+    }
+   }
   
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -139,8 +196,38 @@
     .arrow-right {
       display: none;
     }
+
+    .nav-buttons {
+      margin-top: 2.5%;
+    }
+  
+    .arrow-div-right {
+      margin-left: 77%;
+    }
+  
+    .arrow-div-left {
+      margin-right: 0px;
+    }
   
    }
+
+   @media (min-width: 1200px) and (max-width: 1475px) {
+    .arrow-div-right {
+      margin-left: 80%;
+    }
+    
+    .arrow-div-left {
+      margin-right: 0px;
+    }
+  
+    .nav-buttons {
+      margin-top: 2%;
+    }
+
+    .huddle-img {
+      height: 500px !important;
+    }
+  }
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
