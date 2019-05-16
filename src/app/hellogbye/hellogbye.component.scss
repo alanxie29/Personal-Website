@@ -177,6 +177,14 @@ h2 {
     margin-right: 0px;
   }
 
+  h2 {
+    font-size: 90%;
+  }
+
+  .list {
+    font-size: 90%;
+  }
+
  }
 
 // Large devices (desktops, 992px and up)
@@ -202,6 +210,14 @@ h2 {
     margin-right: 0px;
   }
 
+  h2 {
+    font-size: 100% !important;
+  }
+  
+  .list {
+    font-size: 100% !important;
+  }
+
  }
 
 
@@ -217,6 +233,8 @@ h2 {
   .nav-buttons {
     margin-top: 2%;
   }
+
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -239,6 +257,14 @@ h2 {
   h1 {
     margin-top: 0px;
     font-size: 200%;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  .list {
+    font-size: 110%;
   }
 
 } 
