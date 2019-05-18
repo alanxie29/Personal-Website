@@ -57,7 +57,15 @@
 
 .detail-link {
   color: #0080FF;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
   cursor: pointer;
+  transition: background-position 0.5s ease-out;
+}
+
+.detail-link:hover {
+  background-position: -99.99% 0;
 }
 
 .projects-card-desktop {
@@ -382,15 +390,19 @@ mat-card:hover {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
   h1 {
-    font-size: 350%;
+    font-size: 275%;
   }
 
   h2 {
-    font-size: 120%;
+    font-size: 100%;
+  }
+
+  #icon-row-main a {
+    font-size: 20px;
   }
 
   #arrow-style {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 15%;
   }
 
@@ -447,7 +459,7 @@ mat-card:hover {
   }
 
   .centerpiece {
-    margin-top: 20%;
+    margin-top: 50px;
   }
 
   #arrow-style {
@@ -486,6 +498,14 @@ mat-card:hover {
 
   .description {
     font-size: 90%;
+  }
+
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 100%;
   }
 
 }
@@ -557,6 +577,18 @@ mat-card:hover {
       margin-top: 40%;
     }
 
+    h1 {
+      font-size: 300%;
+    }
+
+    h2 {
+      font-size: 100%;
+    }
+
+    #icon-row-main a {
+      font-size: 24px;
+    }
+
   }
 
 @media (min-width: 1200px) and (max-width: 1475px) {
@@ -574,6 +606,10 @@ mat-card:hover {
 
   h2 {
     font-size: 120%;
+  }
+
+  .centerpiece {
+    margin-top: 0px !important;
   }
 
 

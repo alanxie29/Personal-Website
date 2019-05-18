@@ -1,5 +1,6 @@
 #full-page {
   padding-top: 0px !important;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -53,6 +54,7 @@ h2 {
   font-size: 130%;
   letter-spacing: 2px;
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
 }
 
 .info-title {
@@ -82,6 +84,7 @@ h2 {
 
 .list {
   font-size: 120%;
+  letter-spacing: 1px;
 }
 
 .nav-buttons {
@@ -149,7 +152,11 @@ h2 {
   }
 
   h2 {
-    font-size: 85%;
+    font-size: 90%;
+  }
+
+  .list {
+    font-size: 90%;
   }
 
  }
@@ -166,7 +173,7 @@ h2 {
   }
 
   .nav-buttons {
-    margin-top: 4%;
+    margin-top: 3.5%;
   }
 
   .arrow-div-right {
@@ -260,11 +267,13 @@ h2 {
   }
 
   h2 {
-    font-size: 110%;
+    font-size: 90%;
+    letter-spacing: 1px;
   }
 
   .list {
-    font-size: 110%;
+    font-size: 90%;
+    letter-spacing: 1px;
   }
 
 } 

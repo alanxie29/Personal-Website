@@ -1,5 +1,6 @@
 #full-page {
   padding-top: 0px !important;
+  padding-bottom: 2rem !important;
 }
 
 .info-title {
@@ -54,6 +55,7 @@ h2 {
   font-size: 130%;
   letter-spacing: 2px;
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
 }
 
 .info-title {
@@ -81,6 +83,7 @@ h2 {
 
 .list {
   font-size: 120%;
+  letter-spacing: 1px;
 }
 
 .nav-buttons {
@@ -175,8 +178,13 @@ h2 {
     margin-right: 0px;
   }
 
+  h2 {
+    font-size: 90%;
+  }
 
-
+  .list {
+  font-size: 90%;
+  }
  }
 
 // Medium devices (tablets, 768px and up)
@@ -246,7 +254,7 @@ h2 {
 
  @media (min-width: 1200px) and (max-width: 1475px) {
   .arrow-div-right {
-    margin-left: 75%;
+    margin-left: 77%;
   }
   
   .arrow-div-left {
@@ -280,11 +288,13 @@ h2 {
   }
 
   h2 {
-    font-size: 110%;
+    font-size: 90%;
+    letter-spacing: 1px;
   }
 
   .list {
-    font-size: 110%
+    font-size: 90%;
+    letter-spacing: 1px;
   }
 
 } 
