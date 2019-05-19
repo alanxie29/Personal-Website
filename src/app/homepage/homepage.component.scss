@@ -485,7 +485,7 @@ mat-card:hover {
   }
 
   .card-title-text {
-    font-size: 180%;
+    font-size: 170%;
   }
 
   #card-title-mobile {
@@ -497,7 +497,8 @@ mat-card:hover {
   }
 
   .description {
-    font-size: 90%;
+    font-size: 75%;
+    margin-top: 5px;
   }
 
   h1 {
@@ -534,10 +535,6 @@ mat-card:hover {
     .card-info {
       width: 45%;
       margin-top: 35px !important;
-    }
-
-    #arrow-style {
-      margin-top: 5%;
     }
 
     .projects-card-desktop {
