@@ -8,15 +8,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CarouselComponent } from'./carousel/carousel.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { SidebarModule } from 'ng-sidebar';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { MatChipsModule } from '@angular/material/chips';
 import { FooterComponent } from  './footer/footer.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { AboutComponent } from './about/about.component';
-import { HellogbyeComponent } from './hellogbye/hellogbye.component';
-import { HuddleComponent } from './huddle/huddle.component';
-import { SubtrackerComponent } from './subtracker/subtracker.component';
 
 
 
@@ -25,11 +20,7 @@ import { SubtrackerComponent } from './subtracker/subtracker.component';
     AppComponent,
     HomepageComponent,
     CarouselComponent,
-    FooterComponent,
-    AboutComponent,
-    HellogbyeComponent,
-    HuddleComponent,
-    SubtrackerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +28,6 @@ import { SubtrackerComponent } from './subtracker/subtracker.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    SidebarModule.forRoot(),
     SlideshowModule,
     MatChipsModule,
     MatSidenavModule,

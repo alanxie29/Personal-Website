@@ -6,13 +6,11 @@
           </span></h1>
       </div>
       <div class="row" id="title-desc">
-        <h2> I'm a <span class="detail"> Health Studies</span> student and <span class="detail">developer</span> in my
-          second year at the University of Waterloo. 
-          I recently finished my internship as a Junior Developer at <span class="detail-link"
-            routerLink="/HelloGbye">HelloGbye</span>, a travel tech
-          startup located in Toronto. I'm currently looking for a 4-month software developer position
-          this fall. Read more about me <span class="detail-link" routerLink="/about">here</span> or
-          view my <span class="detail-link" onclick="location.href='../../assets/resumeUpdate.pdf'">resume</span>.
+        <h2> I'm a <span class="detail"> Health Informatics</span> student and <span class="detail">developer</span> in my
+          third year at the University of Waterloo. 
+          I recently finished my internship as a Full Stack Developer at <span class="detail">
+            Ford Canada</span> working on Ford's cloud-based data streaming and processing platform for their global vehicle fleet. I'm currently looking for a 4-month software developer position
+          this summer.
         </h2>
         <div class="row" id="icon-row-main">
           <a href="https://github.com/alanxie29" id="first-icon"><i class="fab fa-github page-icon"></i></a>
@@ -39,7 +37,7 @@
   </div>
 
 
-  <mat-card class="projects-card-desktop" *ngFor="let project of projects" routerLink="/{{project.name}}">
+  <mat-card class="projects-card-desktop" *ngFor="let project of projects">
     <img class="project-pic" [src]="project.picture" />
     <div class="card-info">
       <div class="row" id="card-title">
@@ -57,7 +55,7 @@
     </div>
   </mat-card>
 
-  <mat-card class="projects-card-mobile" *ngFor="let project of projects" routerLink="/{{project.name}}">
+  <mat-card class="projects-card-mobile" *ngFor="let project of projects">
     <div class="img-row-mobile">
       <img class="project-pic-mobile" [src]="project.picture" />
     </div>
@@ -72,7 +70,7 @@
     </div>
   </mat-card>
 
-  <mat-card class="projects-card-tablet" *ngFor="let project of projects" routerLink="/{{project.name}}">
+  <mat-card class="projects-card-tablet" *ngFor="let project of projects">
     <div class="card-info">
       <div class="row" id="card-title">
         <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
