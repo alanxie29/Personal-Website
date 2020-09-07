@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
-import { CarouselComponent } from'./carousel/carousel.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { SlideshowModule } from 'ng-simple-slideshow';
@@ -19,7 +18,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   declarations: [
     AppComponent,
     HomepageComponent,
-    CarouselComponent,
     FooterComponent
   ],
   imports: [

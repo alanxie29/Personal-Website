@@ -51,4 +51,8 @@ export class HomepageComponent implements OnInit {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
+
 }

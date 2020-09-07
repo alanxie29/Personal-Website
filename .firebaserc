@@ -1,6 +1,7 @@
 {
   "projects": {
-    "staging": "alanxie29.firebaseapp.com",
-    "default": "alanxie29.firebaseapp.com"
+    "staging": "my-project-1553004697510",
+    "default": "my-project-1553004697510",
+    "prod": "my-project-1553004697510"
   }
 }
