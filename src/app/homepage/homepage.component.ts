@@ -10,6 +10,13 @@ export class HomepageComponent implements OnInit {
   private _opened: boolean = false;
   public projects: any[] = [
     {
+      position: "Software Engineer",
+      name: "autonomic.ai",
+      picture: "../assets/au.jpg",
+      description: "Real-time vehicle commands and telemetry collection",
+      chips: ["Project Reactor", "Java", "Spring", "Mockito", "JUnit", "Apache Kafka", "Jackson", "Protocol Buffers", "PostgreSQL", "Grafana", "Prometheus", "Git"]
+    },
+    {
       position: "Full Stack Developer",
       name: "Ford Analytics",
       picture: "../assets/ford.png",
@@ -25,11 +32,11 @@ export class HomepageComponent implements OnInit {
     }, 
     {
       position: "Personal Project",
-      name: "Huddle",
-      picture: "../assets/huddle.png",
-      description: "A new way to connect NFL Fans & local restaurants.",
-      chips: ["React Native", "JavaScript", "Axios (HTTP)", "Frontend Development", "Java (Spring)", "Session-based Authentication", "Git", "MVC Design Patterns"],
-    },  
+      name: "PeanutBot",
+      picture: "../assets/discord.png",
+      description: "A reactive Discord bot for looking up personal stats and information about your favorite games",
+      chips: ["Project Reactor", "Discord4J"]
+    },
     {
       position: "Personal Project",
       name: "SubTracker",
