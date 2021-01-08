@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "alan-xie",
-    "public": "dist/PersonalWebsite",
+    "public": "dist/personal-website",
     "ignore": [
       "firebase.json",
       "**/.*",
