@@ -9,8 +9,10 @@
         <h2> I'm a <span class="detail"> Health Informatics</span> student and <span class="detail">software developer</span> in my
           third year at the University of Waterloo. 
           I recently finished my internship as a Software Engineer at <span class="detail-link" (click)="goToLink('https://autonomic.ai/')">
-            autonomic.ai</span>, working on processing and serving real-time connected vehicle data. Currently, I'm a <span class="detail">project developer </span> on 
-            <span class="detail-link" (click)="goToLink('https://uwblueprint.org/')">UW Blueprint</span>. <br>
+            autonomic.ai</span>, working on processing and serving real-time connected vehicle data. Currently, I'm a <span class="detail">DevOps Engineer </span> at 
+            <span class="detail-link" (click)="goToLink('https://autonomic.ai/')">autonomic.ai</span> working on the company's code delivery platform and infrastructure
+            using Concourse and Kubernetes. <br>
+            <br>
             I'm looking for a <span class="detail"> 4-month software engineer internship </span>this winter.
         </h2>
         <div class="row" id="icon-row-main">
@@ -20,64 +22,3 @@
           <a href="mailto:alanxie29@gmail.com"><i class="fas fa-envelope page-icon"></i></a>
         </div>
       </div>
-
-      <div class="row" id="arrow-style" (click)="scroll(experience)">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </div>
-    </div>
-  </div>
-  <div #experience id="experience-header">
-    <div class="experience-title">
-      <h3>Experience & Projects</h3>
-    </div>
-  </div>
-
-
-  <mat-card class="projects-card-desktop" *ngFor="let project of projects">
-    <img class="project-pic" [src]="project.picture" />
-    <div class="card-info">
-      <div class="row" id="card-title">
-        <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
-          <span class="subtitle">{{project.position}}</span></mat-card-title>
-      </div>
-      <div class="description">
-        <h4 class="description-text">{{project.description}}</h4>
-      </div>
-      <div class="chips">
-        <mat-chip-list>
-          <mat-chip disableRipple="true" class="chip" *ngFor="let chip of project.chips">{{chip}}</mat-chip>
-        </mat-chip-list>
-      </div>
-    </div>
-  </mat-card>
-
-  <mat-card class="projects-card-mobile" *ngFor="let project of projects">
-    <div class="img-row-mobile">
-      <img class="project-pic-mobile" [src]="project.picture" />
-    </div>
-    <div class="card-info">
-      <div class="row" id="card-title-mobile">
-        <mat-card-title class="card-title-text">{{project.name}}&nbsp;&nbsp;<span class="split-light">| &nbsp;</span>
-          <span class="subtitle">{{project.position}}</span></mat-card-title>
-      </div>
-      <div class="description">
-        <h4 class="description-text">{{project.description}}</h4>
-      </div>
-    </div>
-  </mat-card>
-
-  <mat-card class="projects-card-tablet" *ngFor="let project of projects">
-    <div class="card-info">
-      <div class="row" id="card-title">
-        <mat-card-title class="card-title-text">{{project.name}}&nbsp;<span class="split-light">| </span>
-          <span class="subtitle">{{project.position}}</span></mat-card-title>
-      </div>
-      <div class="description">
-        <h4 class="description-text">{{project.description}}</h4>
-      </div>
-    </div>
-    <img class="project-pic" [src]="project.picture" />
-  </mat-card>
-</div>
